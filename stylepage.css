@@ -1,0 +1,56 @@
+.logo-music {
+  width: 10%;
+}
+
+.music-badge {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.rltv {
+  position: relative;
+}
+
+tr:nth-of-type(even) {
+  background: rgb(133, 105, 122);
+}
+
+tr:nth-of-type(odd) {
+  background: rgb(223, 210, 210);
+}
+
+#table-header {
+  background: transparent;
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background 1s ease-in-out;
+  -webkit-transition: background 1s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  /*background: #BE1E2D;*/
+  background: #99cc55;
+  opacity: 0;
+}
+
+.jmb {
+  animation: fade-in 2s 2s ease-in both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

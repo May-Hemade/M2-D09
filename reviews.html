@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reviews</title>
+
+    <style>
+      .reviews-container {
+        width: 500px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="stylepage.css" />
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">May's Albums</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorites.html">Favorites</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="worst-album.html">Worst-album</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="cover-images.html">Covers</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="reviews-container">
+      <div class="card">
+        <img
+          src="images /harry-styles-fine-line.jpeg"
+          class="card-img-top"
+          alt="Harry Styles, 'Fine line' cover image"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Fine Line</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Harry Styles</li>
+          <li class="list-group-item">Pop</li>
+          <li class="list-group-item">50 min</li>
+        </ul>
+        <div class="card-body">
+          <a
+            href="https://www.rollingstone.com/music/music-lists/best-albums-of-all-time-1062063/harry-styles-fine-line-3-1062742/"
+            class="card-link"
+            >Card link</a
+          >
+        </div>
+      </div>
+
+      <div>
+        <p class="lead text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
+          ipsum, dolores quis culpa, nam aliquid commodi eos magni hic molestias
+          earum reiciendis laborum debitis delectus consequatur necessitatibus!
+          Atque eaque ab cumque pariatur aut provident numquam necessitatibus
+          officiis, quia fuga at illo voluptatem laboriosam dolorem odit, porro
+          alias. Id officia beatae quo inventore facere, perferendis eaque
+          labore eligendi blanditiis iste eos! Fugit excepturi rerum corporis
+          libero placeat! In assumenda sapiente fuga, similique perferendis
+          totam quaerat praesentium, veritatis molestiae, officia quod numquam
+          ad? Consectetur, est? Eos sit, culpa quam quis impedit doloremque
+          itaque perferendis dignissimos? Voluptatibus facilis rem odio
+          voluptate culpa consectetur?
+        </p>
+      </div>
+    </main>
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr id="table-header">
+            <th scope="col">#</th>
+            <th scope="col">Track</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>3:50min</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>2:00min</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark</td>
+            <td>3:50min</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Jacob</td>
+            <td>2:00min</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>
+              <input
+                class="btn btn-ghost btn-secondary btn-sm"
+                type="button"
+                value="delete Track"
+                onclick="SomeDeleteRowFunction(this)"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      function SomeDeleteRowFunction(o) {
+        var p = o.parentNode.parentNode
+        p.parentNode.removeChild(p)
+      }
+    </script>
+  </body>
+</html>
