@@ -27,18 +27,18 @@ tr:nth-of-type(odd) {
   background: transparent;
 }
 
-.btn {
+td .btn {
   text-transform: uppercase;
   text-decoration: none;
   transition: background 1s ease-in-out;
   -webkit-transition: background 1s ease-in-out;
   cursor: pointer;
+  opacity: 0;
 }
 
-.btn:hover {
-  /*background: #BE1E2D;*/
+td .btn:hover {
   background: #99cc55;
-  opacity: 0;
+  opacity: 1;
 }
 
 .jmb {
