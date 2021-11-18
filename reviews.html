@@ -117,8 +117,8 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
@@ -130,8 +130,8 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
@@ -143,8 +143,8 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
@@ -157,8 +157,8 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
@@ -170,8 +170,8 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm gradient"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
@@ -183,19 +183,24 @@
               <input
                 class="btn btn-ghost btn-secondary btn-sm"
                 type="button"
-                value="delete Track"
-                onclick="SomeDeleteRowFunction(this)"
+                value="Delete Track"
+                onclick="deleteRow(this)"
               />
             </td>
           </tr>
         </tbody>
       </table>
+
+      <button type="button" class="btn add-btn btn-dark btn-sm mb-3">
+        Add Track
+      </button>
     </div>
 
     <script>
-      function SomeDeleteRowFunction(o) {
-        var p = o.parentNode.parentNode
-        p.parentNode.removeChild(p)
+      const deleteRow = function (button) {
+        const row = button.parentNode.parentNode
+        const table = row.parentNode
+        table.removeChild(row)
       }
     </script>
   </body>
